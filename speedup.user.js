@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name              电信宽带提速助手
 // @namespace         https://github.com/syhyz1990/speedup
-// @version           1.0.0
+// @version           1.0.1
 // @icon              https://www.baiduyun.wiki/speedup.png
 // @description       【电信宽带提速助手】是一款基于电信宽带的免费提速脚本，可将低于200M的家庭宽带提速至200M。
 // @author            syhyz1990
@@ -29,7 +29,7 @@
 
   const version = '1.0.0'
   const id = 2017030000 + (Date.parse(new Date()) / 1000).toString()
-  const copyright = 'Powerd By <a style="margin-left: 5px;" href="https://www.baiduyun.wiki/install-speedup" target="_blank">电信宽带提速助手</a>'
+  const copyright = 'Powerd By <a style="margin-left: 5px;" href="https://www.baiduyun.wiki/install-speedup.html" target="_blank">电信宽带提速助手</a>'
   const s1 = 'YUhSMGNITTZMeTlwYzNCbFpXUXVaV0pwZEM1amJpOTRlV1poWTJVdmVIbHpjR1ZsWkVGamRHbDJhWFI1TDJselZITXVhbWgwYld3PQ=='
   const s2 = 'YUhSMGNEb3ZMMmx6Y0dWbFpDNWxZbWwwTG1OdUwzaDVabUZqWlM5NGVYTndaV1ZrUVdOMGFYWnBkSGt2YzNCbFpXUjFjQzVxYUhSdGJBPT0='
 
@@ -63,7 +63,7 @@
               confirmButtonText: '立即提速'
             }).then((result) => {
               if (result.value) {
-                GM_openInTab('https://www.baiduyun.wiki/install-speedup', {active: true})
+                main.handleSpeedUp()
               }
             })
           } else {
@@ -126,7 +126,7 @@
     },
     createMenu() {
       GM_registerMenuCommand('跳转到提速页面', function () {
-        GM_openInTab('http://www.baiduyun.wiki/speedup', {active: true})
+        GM_openInTab('https://www.baiduyun.wiki/install-speedup.html', {active: true})
       })
     }
   }
