@@ -13,7 +13,7 @@
 
 出现下图表示当前宽带支持提速，点击 `立即提速` 按钮进行提速。
 
-![](https://i.loli.net/2020/03/05/9JAW31sca4oDpIw.png)
+![](https://i.loli.net/2020/03/05/1CT2DjUAV79hzxs.png)
 
 出现下图表示当前宽带不支持提速。
 
